@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="344dp"
+            android:layout_height="400dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="250dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/logo"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ctUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginRight="15dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-medium"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:hint="Username"
+                    android:textSize="17dp"
+                    android:background="@drawable/custom_input"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+
+                    android:id="@+id/ctPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-medium"
+                    android:hint="Password"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Login" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</RelativeLayout>
